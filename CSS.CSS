@@ -27,11 +27,6 @@
     src: url(titr.ttf);
 }
 
-@font-face {
-    font-family: iran;
-    src: url(IranNastaliq.ttf);
-}
-
 a {
     font-size: 25px;
     text-decoration: none;
@@ -62,13 +57,6 @@ a:active {
     height: 0;
     overflow: hidden;
     font-family: titr;
-}
-
-#panel:active {
-    width: 100%;
-}
-
-#panel {
     transition: all 1s;
 }
 
@@ -80,7 +68,7 @@ a:active {
 #pre-f:hover #panel,
 #panel:hover {
     width: 100%;
-    height: 160px;
+    height: 180px;
 }
 
 .welcome-to-nokhbegan {
@@ -97,9 +85,10 @@ a:active {
 }
 
 .welcome-to-nokhbegan:hover {
-    border-radius: 50%;
-    border: 40px double rgb(255, 255, 255);
-    color: red;
+    background-color: white;
+    border-radius: 100px;
+    border: 20px double;
+    color: black;
     text-shadow: 500px 0px 0px yellow;
     padding-right: 500px;
     box-shadow: 10px -10px 10px red;
@@ -113,7 +102,6 @@ a:active {
     border-radius: 0;
     color: red;
     text-shadow: 0 45px 0 red;
-    padding-right: unset;
     padding-top: 300px;
     box-shadow: unset;
 }
@@ -168,24 +156,80 @@ div:hover #a {
     height: 0;
 }
 
-@media (min-width: 540px) {
-    * {
-        font-size: 30px;
-        cursor: unset;
+#three-line {
+    display: block;
+}
+
+/* @media (min-width: 1000px) {
+    #three-line {
+        overflow: hidden;
+        width: 0;
+        height: 0;
     }
 
     .welcome-to-nokhbegan:hover {
-        padding-right: 450px;
-        text-shadow: unset;
+        padding-right: 380px;
+        text-shadow: 0 45px 0 red;
+        box-shadow: unset;
     }
 }
 
-@media (max-width: 540px) {
+@media only screen and (min-width: 540px) {
     * {
         cursor: unset;
     }
 
+    #three-line {
+        width: 50px;
+        height: 50px;
+    }
+
+    .welcome-to-nokhbegan {
+        box-shadow: unset;
+    }
+
     .welcome-to-nokhbegan:hover {
-        padding-right: 450px;
+        padding-right: 380px;
+        text-shadow: unset;
+        box-shadow: unset;
+    }
+
+    myhr {
+        display: block;
+        margin: 1% 0.5% 0 0.5%;
+        border: 5px dashed gray;
+        border-style: ridge;
+        width: 50px;
+    }
+
+    #se {
+        overflow: hidden;
+        width: 0;
+        height: 0;
+    }
+} */
+
+
+@media only screen and (min-width: 540px) {
+    * {
+        background-color: purple;
+    }
+}
+
+@media only screen and (min-width: 720px) {
+    * {
+        background-color: blue;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    * {
+        background-color: green;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    * {
+        background-color: red;
     }
 }
