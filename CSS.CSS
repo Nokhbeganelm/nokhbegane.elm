@@ -1,4 +1,3 @@
-/* All page visitor's Dives is phone */
 ::selection {
     background-color: black;
     color: lightpink;
@@ -97,7 +96,7 @@ a:active {
 }
 
 #background-fixed {
-    background-image: url(picture_resurce/news.bmp);
+    background-image: url(picture_resurce/news/news.bmp);
     background-attachment: fixed;
     margin: 100px 0px 20px 0px;
     display: block;
@@ -147,28 +146,48 @@ h1 {
 
 #three-line {
     transition: unset;
-    border-radius: 50%;
+    color: white;
+    height: 0;
+    width: 0;
 }
 
-
-
-@media (min-width: 1000px) {
-    #three-line {
-        height: 0;
-        width: 0;
-    }
+#more-info {
+    color: pink;
+    text-shadow: unset;
+    padding-right: 15%;
 }
 
-@media (max-width: 999px) {
+@media (min-width: 720px) and (max-width: 999px) {
     #three-line {
+        margin-top: 45px;
         display: block;
-        height: 80px;
-        border-radius: 50%;
+        height: 25px;
+        width: 25px;
+        float: right;
     }
-    section {
+    #section {
         height: 0;
         width: 0;
         overflow: hidden;
     }
+    @media only screen and (max-width: 999px) {
+        #section {
+            width: auto;
+            height: auto;
+        }
+    }
+    myhr {
+        border: unset;
+    }
+    .welcome-to-nokhbegan:hover {
+        border-radius: unset;
+        text-shadow: unset;
+        padding-right: unset;
+        box-shadow: unset;
+    }
+    .welcome-to-nokhbegan:active {
+        border-radius: 100px;
+        text-shadow: 0 50px 0 red;
+        box-shadow: 10px -10px 10px yellowgreen;
+    }
 }
-/* (min-width: 720px) and */
