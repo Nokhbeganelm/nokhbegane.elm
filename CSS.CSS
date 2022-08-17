@@ -147,12 +147,6 @@ h1 {
     myhr {
         border: unset
     }
-}
-
-@media (min-width: 720px) and (max-width: 1200px) {
-    #three-line {
-        width: 100px
-    }
 
     .welcome-to-nokhbegan:hover {
         border-radius: 100px;
@@ -166,6 +160,14 @@ h1 {
         text-shadow: 0 50px 0 blueviolet;
         box-shadow: 10px -10px 10px yellowgreen
     }
+}
+
+@media (min-width: 720px) and (max-width: 1200px) {
+    #three-line {
+        width: 100px
+    }
+
+
 }
 
 @media (min-width: 480px) and (max-width: 720px) {
